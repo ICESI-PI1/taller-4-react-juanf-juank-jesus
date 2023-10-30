@@ -1,10 +1,12 @@
 {
     "books": [
         {
-            "id": "",
-            "title": "",
+            "id": "3812",
+            "title": "Cien años de soledad",
             "publicationDate": "",
-            "author": {}
+            "author": {
+                "id": "21"
+            }
         },
         {
             "id": "",

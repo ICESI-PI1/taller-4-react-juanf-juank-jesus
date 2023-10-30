@@ -17,6 +17,7 @@ public class BookRepository implements BookRepositoryI{
 
     public BookRepository(){
         books = new ArrayList<>();
+        books.add(new Book(12, "1000 años de soledad", null, null));
         random = new Random();
     }
 
