@@ -11,10 +11,10 @@ const LoginForm = () => {
 
     axios.post("/auth", user)
         .then(res => {
-            if(res.data.message === "Authentication Successful "){
+            if(res.status === 200){
                 localStorage.setItem("token", res.data.token)
             }
-
+            console.log(res)
             console.log(res.data.token)
         })
     

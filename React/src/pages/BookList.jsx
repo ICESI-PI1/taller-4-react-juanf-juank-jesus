@@ -11,6 +11,7 @@ function BookList({owner}) {
   const getTasks = async () => {
     try {
        const res = await axios.get("/libros")
+       console.log(res)
        setBookList(res.data)
     }catch(e){
       console.log(e)

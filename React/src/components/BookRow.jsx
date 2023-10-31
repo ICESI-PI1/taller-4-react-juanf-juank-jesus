@@ -15,7 +15,7 @@ function BookRow({book}) {
 
             <TableCell align="right">{book.title}</TableCell>
             <TableCell align="left">{book.publicationDate}</TableCell>
-            <TableCell align="left">{book.author.name}</TableCell>
+            <TableCell align="left">{book.author?.name}</TableCell>
 
         </TableRow>  
     )
