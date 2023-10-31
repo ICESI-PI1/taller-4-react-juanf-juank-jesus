@@ -21,9 +21,8 @@ function BookList({owner}) {
 
   return (
     <BookContext.Provider value={{}}>
-    {owner}s TaskList
-    <BookTable books={bookList}/>
-  </BookContext.Provider>
+      <BookTable books={bookList}/>
+    </BookContext.Provider>
   )
 }
 
