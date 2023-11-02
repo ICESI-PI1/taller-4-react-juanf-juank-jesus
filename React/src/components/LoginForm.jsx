@@ -13,13 +13,9 @@ const LoginForm = () => {
         .then(res => {
             if(res.status === 200){
                 localStorage.setItem("token", res.data.token)
+                console.log("Token almacenado en localStorage:", res.data.token);
             }
-            console.log(res)
-            console.log(res.data.token)
         })
-    
-    console.log(user)
-
   };
 
   return (
