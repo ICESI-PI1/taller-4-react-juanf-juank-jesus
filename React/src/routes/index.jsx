@@ -8,7 +8,8 @@ import BooksPage from '../pages/BooksPage';
 
 const Router = () => (
     <BrowserRouter>
-        <Routes>    
+        <Routes>
+            <Route path="/*" element={<Login />} />    
             <Route path="/books" element={<BookList />} />     
             <Route path="/auth" element={<Login />} />    
             <Route path="/MenuPage" element={<MenuPage />} />
