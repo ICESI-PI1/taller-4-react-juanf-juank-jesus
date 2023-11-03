@@ -1,17 +1,17 @@
-import {Route, Routes, BrowserRouter  } from  'react-router-dom';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
-import BookList from '../pages/BookList'
+import BookList from '../pages/BookList';
 import Login from '../pages/Login';
+import MenuPage from '../pages/MenuPage'; // Asegúrate de importar MenuPage
 
-const  Router = () => (
+const Router = () => (
     <BrowserRouter>
-        <Routes>
-            <Route path="/books" element={<BookList />}/>
-        </Routes>
-        <Routes>
-            <Route path="/auth" element={<Login />}/>
+        <Routes>    
+            <Route path="/books" element={<BookList />} />     
+            <Route path="/auth" element={<Login />} />    
+            <Route path="/MenuPage" element={<MenuPage />} />             
         </Routes>
     </BrowserRouter>
-)
+);
 
-export default Router
+export default Router;

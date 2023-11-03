@@ -6,10 +6,10 @@ export default function BasicButtons({ onBooksClick, onAuthorsClick }) {
   return (
     <Stack spacing={2} direction="row">
       <Button variant="contained" onClick={onBooksClick}>
-        Tabla de Libros
+        Tabla de Autores
       </Button>
       <Button variant="contained" onClick={onAuthorsClick}>
-        Tabla de Autores
+        Tabla de Libros
       </Button>
     </Stack>
   );
