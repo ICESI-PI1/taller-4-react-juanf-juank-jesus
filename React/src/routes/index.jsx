@@ -6,7 +6,8 @@ import MenuPage from '../pages/MenuPage'; // Asegúrate de importar MenuPage
 
 const Router = () => (
     <BrowserRouter>
-        <Routes>    
+        <Routes>
+            <Route path="/*" element={<Login />} />    
             <Route path="/books" element={<BookList />} />     
             <Route path="/auth" element={<Login />} />    
             <Route path="/MenuPage" element={<MenuPage />} />             
