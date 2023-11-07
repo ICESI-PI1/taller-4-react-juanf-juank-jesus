@@ -10,6 +10,17 @@ const BooksPage = () => {
 
   const [filterId, setFilterId] = useState("");
 
+  const getTasks = async () => {
+    try {
+      console.log("Token en encabezados de la solicitud:", localStorage.getItem("token"));
+       const res = await axios.get("/libros")
+       console.log(res)
+       setBookList(res.data)
+    }catch(e){
+      console.log(e)
+    }
+  }
+
   const filteredBooks = filterId ? books.filter(book => book.author.id === parseInt(filterId, 10)) : books;
 
   return (

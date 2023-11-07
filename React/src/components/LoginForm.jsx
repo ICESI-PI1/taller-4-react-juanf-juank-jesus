@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import {useNavigate} from 'react-router-dom';
 import { Button, TextField, Typography, Box, Paper } from '@mui/material';
 import axios from  '../config/axios'
 
 const LoginForm = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  let navigate = useNavigate();
 
   const handleLogin = () => {
     let user = { username, password }
@@ -14,6 +16,7 @@ const LoginForm = () => {
             if(res.status === 200){
                 localStorage.setItem("token", res.data.token)
                 console.log("Token almacenado en localStorage:", res.data.token);
+                navigate('/MenuPage')
             }
         })
   };
